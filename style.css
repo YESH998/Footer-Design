@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #0b0b18e8;
+    padding: 70px 0px;
+}
+
+.col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.col h4 {
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 35px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.col h4:hover {
+    color: aqua;
+}
+
+.col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 60px;
+    background: #73f005;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.col ul li a {
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    display: block;
+}
+
+.col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+/*responsive*/
+@media(max-width: 768px) {
+    .col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .col {
+        width: 100%;
+    }
+}
